@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -6,12 +6,12 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const tail = function (arr) {
+const tail = function(arr) {
   console.log(arr.slice[-1]);
   for (let i = 1; i < arr.length; i++) {
     stringCon += arr[i];
   }
-}
+};
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
