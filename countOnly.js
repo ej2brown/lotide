@@ -11,8 +11,8 @@ const assertEqual = function (actual, expected) {
 // itemsToCount = { "Jason": true, "Karima": true, "Fang": true }
 const countOnly = function (allItems, itemsToCount) {
   const results = {};
+  // check if item exists in itemsToCount
   for (const item of allItems) { // item = 'Fang'
-    // check if item exists in itemsToCount
     if (itemsToCount[item] === true) {
       // if results has the key item on it, increment its value
       if (results[item]) {
